@@ -10,6 +10,10 @@
     </div>
 
     <input type="text" id="textoUsuario" name="textoUsuario" />
-    <button onclick="enviarMensaje()">Enviar</button>
+    <button onclick="enviarMensaje()">Enviar</button> <br>
+
+    <div>
+        <button onclick="verMensaje()">ver mensaje</button>
+    </div>
 
 </div>

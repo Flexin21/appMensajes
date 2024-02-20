@@ -7,6 +7,9 @@
         <input type="text" name="nombre" />
         <br>
         <input type="submit" value="Acceder" />
+        
     </form>
+
+    
 
 </div>

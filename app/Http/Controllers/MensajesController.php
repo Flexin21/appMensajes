@@ -40,6 +40,13 @@ class MensajesController extends Controller
 
         echo 'Mensaje enviado y guardado';
 
+    }
+
+    public function verMensajes() {
+        
+        return  view('templates/header').
+                view('listadoMensajes').
+                view('templates/footer');
 
     }
 }

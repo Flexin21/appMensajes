@@ -11,3 +11,16 @@ function enviarMensaje() {
         }
     });
 }
+
+function verMensaje() {
+    var texto = $('#textoUsuario').val();
+    
+    $.ajax({
+        url: baseUrl + '/verMensajes',
+        method: 'get',
+        data: { mensajeEnvio: texto },
+        success: function(respuesta) {
+            alert(respuesta);
+        }
+    });
+}

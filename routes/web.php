@@ -22,4 +22,5 @@ Route::post('/login', [UsuariosController::class, 'registrarSesion']);
 // MENSAJES:
 Route::get('/listado', [MensajesController::class, 'mostrarMensajes']);
 Route::get('/enviarMensaje', [MensajesController::class, 'enviarMensaje']);
+Route::get('/verMensajes', [MensajesController::class, 'verMensajes']);
 
