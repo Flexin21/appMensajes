@@ -22,7 +22,8 @@ class UsuariosController extends Controller
         return  view('templates/header').
                 view('acceso').
                 view('templates/footer');
-        
+
+                
     }
 
     public function registrarSesion(Request $request) {
