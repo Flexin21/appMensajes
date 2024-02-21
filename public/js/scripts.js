@@ -8,7 +8,10 @@ function enviarMensaje() {
         data: { mensajeEnvio: texto },
         success: function(respuesta) {
             alert(respuesta);
+
+            verMensaje();
         }
+
     });
 }
 
@@ -16,11 +19,10 @@ function verMensaje() {
     var texto = $('#textoUsuario').val();
     
     $.ajax({
-        url: baseUrl + '/verMensajes',
+        url: baseUrl + '/obtenerMensajes',
         method: 'get',
-        data: { mensajeEnvio: texto },
         success: function(respuesta) {
-            alert(respuesta);
+            console.info(respuesta);
         }
     });
 }

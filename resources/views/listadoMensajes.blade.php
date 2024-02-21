@@ -13,7 +13,7 @@
     <button onclick="enviarMensaje()">Enviar</button> <br>
 
     <div>
-        <button onclick="verMensaje()">ver mensaje</button>
+        <button onclick="verMensaje()">ver Mensaje</button>
     </div>
 
 </div>

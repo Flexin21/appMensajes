@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Session;
 use Illuminate\Http\Request;
 use App\Models\Mensaje;
-use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\DB;
 
 class MensajesController extends Controller
 {
@@ -42,11 +43,10 @@ class MensajesController extends Controller
 
     }
 
-    public function verMensajes() {
+    public function obtenerMensajes() {
         
-        return  view('templates/header').
-                view('listadoMensajes').
-                view('templates/footer');
+        $mensajes = DB::select('SELECT * FROM mensajes');
+        
 
     }
 }
