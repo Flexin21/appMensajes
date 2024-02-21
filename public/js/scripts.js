@@ -23,6 +23,9 @@ function verMensaje() {
         method: 'get',
         success: function(respuesta) {
             console.info(respuesta);
+            var mensajes= JSON.parse(respuesta);
+            console.log(mensajes);
+            console.log("EL mensaje 0 es" + mensajes [0] ['texto']);
         }
     });
 }
